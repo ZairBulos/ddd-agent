@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: ddd-agent
+
+ddd-agent:
+  output-dir: "linkedin-posts"
+
+embabel:
+  agent:
+    platform:
+      models:
+        gemini:
+          api-key: ${GEMINI_API_KEY:your-api-key}
+  models:
+    default-llm: llama3.2:3b
+    llms:
+      reviewer: gemini-2.5-flash
