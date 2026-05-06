@@ -6,20 +6,20 @@ built with [Embabel Agent Framework](https://github.com/embabel/embabel-agent).
 ## Quick Start
 
 ```bash
-export GOOGLE_STUDIO_API_KEY=your-google-studio-key
+export GEMINI_API_KEY=your-gemini-api-key-here
 ollama pull llama3.2
 mvn spring-boot:run
 ```
 
 The app launches an interactive shell. Type `x "your topic"` and the agent will produce a reviewed, 
-publication-ready LinkedIn post saved to `posts/`.
+publication-ready LinkedIn post saved to `linkedin-posts/`.
 
 ## Prerequisites
 
 - Java 25+
 - Maven 3.9+
 - [Ollama](https://ollama.com) running locally with a model pulled
-- A Google AI Studio API key → [aistudio.google.com](https://aistudio.google.com) (free tier works)
+- A Gemini API key → [aistudio.google.com](https://aistudio.google.com) (free tier works)
 
 ## How It Works
 
